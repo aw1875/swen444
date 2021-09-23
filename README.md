@@ -24,3 +24,4 @@ Once the required dependencies have installed you can very easily start the proj
 ```bash
 npm start
 ```
+This command should automatically open the project in a new tab of your web browser. However, if it doesn't for some reason then all you need to do is open a new tab and navigate to http://localhost:3000 to access the project manually.
