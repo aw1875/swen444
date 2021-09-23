@@ -1,13 +1,39 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+    -moz-user-select: -moz-none;
+      -webkit-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::-moz-selection {
+    background: #0b2842;
+}
+
+::selection {
+    background: #0b2842;
+}
+
+/* Scrollbar Style */
+html::-webkit-scrollbar {
+    width: 10px;
+    background-color: #071e3d;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #1f4287;
+}
+
+/* Payment Style */
+.exp-wrapper:after {
+    content: '/';
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-left: -4px;
+    color: #aaa;
 }
